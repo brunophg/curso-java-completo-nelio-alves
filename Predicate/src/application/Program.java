@@ -17,7 +17,7 @@ public class Program {
          list.add(new Product("Tablet", 350.00));
          list.add(new Product("HD Case ", 90.00));
 
-         list.removeIf(Product::staticProductPredicate);
+         list.removeIf(Product::nonStaticProductPredicate);
 
          for (Product product : list) {
              System.out.println(product);

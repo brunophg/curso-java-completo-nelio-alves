@@ -34,6 +34,12 @@ public class Product implements Comparable<Product> {
         return product.getPrice() >= 100.0;
     }
 
+    public boolean nonStaticProductPredicate() {
+        return price >= 100.0;
+    }
+
+
+
     @Override
     public String toString() {
         return "Product{" +
